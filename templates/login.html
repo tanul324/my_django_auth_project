@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>login</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+
+    <body>
+        <div class="container-fluid text-center vh-100">
+            <div class="card h-75 d-inline-block w-40 p-3 mt-5  bg-light border border-black border border-4">
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                            <h3 class="card-title mb-5">Welcome Back !</h3>
+                        <input type="email" name = "email" placeholder="Email"><i class="fa-solid fa-user m-2"></i><br><br>
+                        <input type="password" name = "password" placeholder="Password"><i class="fa-solid fa-lock m-2"></i><br>
+                        <button type="button" class="btn btn-primary mt-4 mb-4">Login</button><br>
+                        <a href="{% url 'register' %}">register</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Registation form</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+
+    <body>
+        <div class="container-fluid vh-100 text-center">
+            <div class="card h-75 d-inline-block w-40  m-5 bg-light border border-black border border-4 " >
+                <div class="card-body">
+                    <h2 class="head mb-3">Register here </h2>
+                    <input type="text" name = "username" placeholder="Username"><i class="fa-solid fa-user m-2"></i><br><br>
+                    <input type="email"  name =  "email" placeholder="Email"><i class="fa-solid fa-envelope m-2"></i><br><br>
+                    <input type="password" name = "password" placeholder="Password"><i class="fa-solid fa-lock m-2"></i><br><br>
+                        <input type="password" placeholder="Confirm Password"><i class="fa-solid fa-lock m-2"></i><br><br>
+                        <button  type="button" class="btn btn-primary mb-1">Register</button><br>
+                        <a href="{% url 'login' %}">login</a>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
