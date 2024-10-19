@@ -23,9 +23,10 @@ from main_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login', views.login_veiw, name='login'),
+    path('logout', views.logout_veiw, name='logout'),
     path('register',views.register_veiw, name='register'),
-    path('', views.home_veiw,name='home'),
-        path("__reload__/", include("django_browser_reload.urls")),
+    path('', views.home_view, name='home'),
+    path("__reload__/", include("django_browser_reload.urls")),
     
 ]
 

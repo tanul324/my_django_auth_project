@@ -20,15 +20,16 @@
     </head>
 
     <body>
-        <div class="container-fluid text-center vh-100">
-            <div class="card h-75 d-inline-block w-40 p-3 mt-5  bg-light border border-black border border-4">
+            <div class="container-fluid text-center vh-100 d-flex justify-content-center align-items-center "> 
+            <div class="card h-90 d-inline-block w-80  mt-5  bg-light border  border-4">
                 <div class="card-body">
-                    <form>
+                    <form method="post">
+                    {% csrf_token %}
                         <div class="mb-3">
-                            <h3 class="card-title mb-5">Welcome Back !</h3>
-                        <input type="email" name = "email" placeholder="Email"><i class="fa-solid fa-user m-2"></i><br><br>
+                            <h3 class="card-header bg-black text-white ">LOGIN</h3><br>
+                        <input type="username" name = "username" placeholder="username"><i class="fa-solid fa-user m-2"></i><br><br>
                         <input type="password" name = "password" placeholder="Password"><i class="fa-solid fa-lock m-2"></i><br>
-                        <button type="button" class="btn btn-primary mt-4 mb-4">Login</button><br>
+                        <button  class="btn btn-primary mt-4 mb-4">Login</button><br>
                         <a href="{% url 'register' %}">register</a>
                     </form>
                 </div>
